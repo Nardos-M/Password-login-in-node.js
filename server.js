@@ -18,6 +18,7 @@ app.get("/users", (req, res) => {
   res.json(users);
 });
 
+// this is why we need to secure our password coz ppl can see or read it
 app.post("/user", (req, res) => {
     const user = {
         username: req.body.username,
